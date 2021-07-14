@@ -1,11 +1,14 @@
 import React from "react";
+//stylesheet import
+import './HeaderLogo.scss';
+
 const Logo = () => {
   return (
     <svg
       role="img"
       aria-label="Jumia Nigeria: Online Shopping for Electronics, Phones &amp; Fashion"
       viewBox="0 0 139 32"
-      class="ic"
+      class="header__logo"
       width="139"
       height="32"
       viewBox="0 0 139 32"

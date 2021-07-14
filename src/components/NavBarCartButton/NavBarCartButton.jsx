@@ -1,8 +1,8 @@
 import React from 'react';     
 
 
-const HeaderCartButton = () => {
+const NavBarCartButton = () => {
     return ( <div>CartButton</div> );
 }
  
-export default HeaderCartButton;
+export default NavBarCartButton;

@@ -1,0 +1,14 @@
+@import '../../variables';
+
+.navbar {
+  &__container {
+    max-width: $gid-width;
+    height: 5.6rem;
+    padding:.8rem;
+    background-color: orangered;
+    display:  flex;
+    margin: 2rem auto;
+    align-items: center;
+    font-size: 1.8rem;
+  }
+}
