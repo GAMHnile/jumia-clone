@@ -2,12 +2,12 @@ import React from "react";
 
 import Routes from "./Routes";
 import Footer from "./components/footer/Footer";
-import Header from "./components/navbar/NavBar";
+import NavBar from "./components/navbar/NavBar";
 
 const Layout = () => {
   return (
     <div>
-      <Header />
+      <NavBar />
       <Routes />
       <Footer />
     </div>

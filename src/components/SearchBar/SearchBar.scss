@@ -1,3 +1,54 @@
-.header__searchbar {
-    width: 60rem;
+@import "../../variables";
+
+.searchbar {
+  display: flex;
+  align-items: center;
+
+  &__input-container {
+    position: relative;
+    height: $input-height;
+    width: 50rem;
+  }
+
+  &__input {
+    height: 100%;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0 3rem;
+    border: 1px solid $color-light-gray-1;
+    border-radius: $rounded-small;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $color-light-gray-1;
+    }
+  }
+
+  &__input-icon {
+    position: absolute;
+    transition: all .2s;
+    height: 2rem;
+    width: 2rem;
+    fill: $color-light-gray-1;
+    &--start {
+      left: 0.8rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &--end {
+      right: 0.8rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  //behavior
+  &__input:not(:placeholder-shown) + &__input-icon--end {
+    opacity: 0;
+  }
 }

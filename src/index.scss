@@ -1,5 +1,15 @@
 @import './variables';
 
+:root{
+  --color-primary-gold: #F68B1E;
+  --color-black: #000;
+
+
+
+  //heights
+  --input-height: 4rem;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', 'Oxygen',
@@ -23,3 +33,6 @@ html {
   box-sizing: inherit;
 }
 
+
+
+.mr-sm {margin-right: $m-sm;}

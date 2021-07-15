@@ -1,0 +1,50 @@
+@import "../../variables";
+
+.navbar-dropdown-btn {
+  display: flex;
+  height: $input-height;
+  align-items: center;
+  padding: $button-padding;
+  border: none;
+  border-radius: $rounded-small;
+  background-color: #fff;
+  &:focus {
+    outline: none;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  &__chv {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  //styles for button in hovered state
+  &:hover {
+    color: $color-primary-gold;
+  }
+  &:hover &__icon {
+    fill: $color-primary-gold;
+  }
+
+  &:hover &__chv {
+    fill: $color-primary-gold;
+  }
+
+  &--active {
+    background-color: $color-lighter-gray-1;
+    color: $color-black;
+    &:hover {
+      color: $color-black;
+    }
+  }
+  &--active:hover &__icon {
+    fill: $color-black;
+  }
+
+  &--active:hover &__chv {
+    fill: $color-black;
+  }
+}

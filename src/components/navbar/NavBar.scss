@@ -1,14 +1,24 @@
-@import '../../variables';
+@import "../../variables";
 
 .navbar {
+  box-shadow: $shadow-small;
+  &__logo {
+    margin-right: auto;
+    width: 13.9rem;
+    height: 3.2rem;
+  }
   &__container {
     max-width: $gid-width;
     height: 5.6rem;
-    padding:.8rem;
-    background-color: orangered;
-    display:  flex;
+    padding: 0.8rem;
+    // background-color: orangered;
+    display: flex;
     margin: 2rem auto;
     align-items: center;
     font-size: 1.8rem;
+  }
+
+  &__searchbar {
+    width: 50rem;
   }
 }

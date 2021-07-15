@@ -1,11 +1,13 @@
 import React from "react";
 import propTypes from 'prop-types';
 
+import './PrimaryButton.scss';
+
 const PrimaryButton = (props) => {
   const { icon } = props;
   return (
     <button className="primary-button">
-      {icon && <div>{icon}</div>}
+      {icon && <icon />}
       <span>{props.children}</span>
     </button>
   );
