@@ -17,6 +17,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $color-page-bg;
 }
 
 html {
@@ -36,3 +37,4 @@ html {
 
 
 .mr-sm {margin-right: $m-sm;}
+.w-full {width: 100%;}

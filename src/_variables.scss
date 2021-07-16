@@ -1,25 +1,49 @@
 //global variables
 
 //lengths
-$gid-width:  120rem;
+$grid-width: 120rem;
+$gap-xs: 0.4rem;
+$gap-base: 0.8rem;
+$gap-lg: 1.2rem;
+$gap-xl: 1.6rem;
+
 $input-height: 4rem;
-$m-sm: .8rem;
+$m-sm: 0.8rem;
 
 //colors
-$color-primary-gold: #F68B1E;
+$color-primary-gold: #f68b1e;
 $color-black: #000;
 $color-light-gray-1: #c7c7cd;
-
+$color-page-bg: #f5f5f5;
+$color-bright: #fff;
 
 $color-lighter-gray-1: #ececec;
 
 //border radius
-$rounded-small: .3rem;
+$rounded-small: 0.3rem;
 
 //shadows
-$shadow-small: 0 .1rem .4rem rgba(#000, .2);
-$shadow-medium: 0 .4rem 1rem rgba( $color-black, .3);
-
+$shadow-small: 0 0.1rem 0.4rem rgba(#000, 0.1);
+$shadow-medium: 0 0.4rem 1rem rgba($color-black, 0.3);
 
 //paddings
-$button-padding: 0 .8rem;
+$button-padding: 0 0.8rem;
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absCenter-H {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin absCenter-V {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

@@ -2,13 +2,14 @@
 
 .navbar {
   box-shadow: $shadow-small;
+  background-color: #fff;
   &__logo {
     margin-right: auto;
     width: 13.9rem;
     height: 3.2rem;
   }
   &__container {
-    max-width: $gid-width;
+    max-width: $grid-width;
     height: 5.6rem;
     padding: 0.8rem;
     // background-color: orangered;

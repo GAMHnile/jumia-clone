@@ -1,0 +1,7 @@
+@import '../variables';
+
+.layout {
+    max-width: $grid-width;
+    // background-color: green;
+    margin: $gap-xl auto;
+}

@@ -1,0 +1,117 @@
+@import '../../variables';
+
+.carousel {
+    border-radius: $rounded-small;
+    position: relative;
+    min-width: 24rem;
+    overflow: hidden;
+
+    &__side {
+        z-index: 200;
+        position: absolute;
+        width: 8rem;
+        height: 100%;
+        top: 0;
+        padding: 2rem;
+        &--prev {
+            left: 0;
+        }
+        &--next {
+            right: 0;
+        }
+    }
+
+    &__btn {
+        @include absCenter;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: none;
+        background-color: transparent;
+        // transition: all .2s;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            background-color:$color-light-gray-1;
+            outline: none;
+        }
+    }
+
+    &__btn-icon {
+        @include absCenter;
+        fill: transparent;
+        height: 80%;
+        width: 80%;
+    }
+
+    //Changes on hover of sides
+    &__side:hover &__btn {
+        background-color: $color-black;
+    }
+    &__side:hover &__btn-icon {
+        fill: $color-bright;
+    }
+
+    &__side:active &__btn {
+        background-color: lighten($color-black, 35%);
+        
+    }
+
+
+
+
+    //image styles
+    &__img-container {
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all .2s;
+        &--active {
+            opacity: 1;
+        }
+    }
+
+    &__img {
+        // object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: top left;
+    }
+
+    //counter
+    &__counter {
+        @include absCenter-H;
+        bottom: $gap-base;
+        z-index: 200;
+    }
+    &__counter-btn {
+        border-radius: 50%;
+        background-color: $color-lighter-gray-1;
+        height: $gap-base;
+        width: $gap-base;
+        margin-right: $gap-xs;
+        border: none;
+        transition: all .2s;
+
+        &:focus {
+            outline: none;
+        }
+        &:first-child {
+            margin-left: $gap-xs;
+        }
+        
+
+        &--active {
+            background-color: $color-primary-gold;
+        }
+
+    }
+
+};

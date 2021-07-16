@@ -1,0 +1,7 @@
+@import '../../variables';
+
+.paper {
+    box-shadow: $shadow-small;
+    background-color: #fff;
+    border-radius: $rounded-small;
+}
