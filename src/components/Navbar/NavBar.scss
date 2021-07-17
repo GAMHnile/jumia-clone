@@ -1,8 +1,11 @@
 @import "../../variables";
 
 .navbar {
+  position: sticky;
+  top: 0;
   box-shadow: $shadow-small;
   background-color: #fff;
+  z-index: 1000;
   &__logo {
     margin-right: auto;
     width: 13.9rem;

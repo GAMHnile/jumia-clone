@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 //component imports
 
-const Home = ({}) => {
+const Home = () => {
     return ( 
     <div>
         <Header />

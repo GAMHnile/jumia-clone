@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Footer = ({}) => {
-    return ( <div>
+const Footer = () => {
+    return ( <div style={{height: '90rem'}}>
         Footer
     </div> );
 }

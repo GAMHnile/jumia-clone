@@ -8,7 +8,7 @@ import './Header.scss';
 //slides import 
 import {slides} from './slides';
 
-const Header = ({}) => {
+const Header = () => {
     return ( 
     <section className="header">
         <HeaderSidebar className="header__sidebar"/>

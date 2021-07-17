@@ -79,10 +79,10 @@
     }
 
     &__img {
-        // object-fit: cover;
+        object-fit: cover;
         width: 100%;
         height: 100%;
-        object-position: top left;
+        object-position: center;
     }
 
     //counter
@@ -92,6 +92,7 @@
         z-index: 200;
     }
     &__counter-btn {
+        cursor: pointer;
         border-radius: 50%;
         background-color: $color-lighter-gray-1;
         height: $gap-base;

@@ -10,7 +10,7 @@ import { ReactComponent as AccountIcon } from "../../img/svg/account.svg";
 import { ReactComponent as HelpIcon } from "../../img/svg/help.svg";
 import { ReactComponent as CartIcon } from "../../img/svg/cart.svg";
 
-const NavBar = ({}) => {
+const NavBar = () => {
   return (
     <div className="navbar">
       <div className="navbar__container">

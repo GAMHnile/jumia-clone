@@ -41,6 +41,7 @@
     }
 
     &--end {
+      opacity: 0;
       right: 0.8rem;
       top: 50%;
       transform: translateY(-50%);
@@ -49,6 +50,6 @@
 
   //behavior
   &__input:not(:placeholder-shown) + &__input-icon--end {
-    opacity: 0;
+    opacity: 1;
   }
 }

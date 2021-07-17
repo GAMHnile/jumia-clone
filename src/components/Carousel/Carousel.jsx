@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import propTypes from "prop-types";
 
 //stylesheet import
@@ -11,18 +11,18 @@ import { ReactComponent as PrevIcon } from "../../img/svg/chevron-left.svg";
 const Carousel = ({ className, slides }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const nextClickHandler = () => {
+  const nextClickHandler = useCallback(() => {
     if (!slides || !Array.isArray(slides)) {
       return;
     }
-    if (activeIndex === slides.length - 1) {
+    if (activeIndex >= slides.length - 1) {
       setActiveIndex(0);
     } else {
       setActiveIndex((currActiveIndex) => {
         return currActiveIndex + 1;
       });
     }
-  };
+  }, [slides, activeIndex, setActiveIndex]);
 
   const prevClickHandler = () => {
     if (!slides || !Array.isArray(slides)) {
@@ -42,14 +42,12 @@ const Carousel = ({ className, slides }) => {
   };
 
   useEffect(() => {
-
     const scrollerIntervalRef = setInterval(nextClickHandler, 5000);
+    
     return () => {
       clearInterval(scrollerIntervalRef);
     };
-  });
-
-  
+  }, [nextClickHandler]);
 
   return (
     <div className={`carousel ${className ? className : ""}`}>
