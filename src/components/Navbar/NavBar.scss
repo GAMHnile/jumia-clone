@@ -19,10 +19,10 @@
     display: flex;
     margin: 2rem auto;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: $text-lg;
   }
 
   &__searchbar {
-    width: 50rem;
+    width: 64rem;
   }
 }
