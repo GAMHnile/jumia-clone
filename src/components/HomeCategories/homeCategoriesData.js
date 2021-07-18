@@ -1,23 +1,26 @@
-// import JumiaGlobalLogo from '../../img/jumia-global.png';
+import JumiaGlobalIcon from '../../img/jumia-global.png';
+import JumiaStoresIcon from '../../img/jumia-stores.png';
+import JumiaFoodIcon from '../../img/jumia-food.png';
+import JumiaPayIcon from '../../img/jumia-pay.png';
 
 export const homeCategoriesData = [
     {
-        icon: JumiaGlobalLogo,
+        iconPath: JumiaGlobalIcon,
         name: "Jumia Global",
         link: "#"
     },
     {
-        icon: "",
+        iconPath: JumiaStoresIcon,
         name: "Official stores",
         link: "#"
     },
     {
-        icon: "",
+        iconPath: JumiaFoodIcon,
         name: "Jumia Food",
         link: "#"
     },
     {
-        icon: "",
+        iconPath: JumiaPayIcon,
         name: "Borrow Money",
         link: "#"
     },
